@@ -1,0 +1,38 @@
+#bin/bash
+pkg install git php -y
+git clone https://github.com/JazzNotJuice/PisowifiSaRoad2Reseller.git
+cat >start-mikhmon <<EOL
+#bin/bash
+if pgrep "php" >/dev/null 2>&1 ; then
+killall php
+fi
+cd mikhmonv3
+php -S 0.0.0.0:8080
+EOL
+cat >update-mikhmon <<EOL
+#bin/bash
+mkdir ~/backup-mikhmon
+cp ~/PisowifiSaRoad2Reseller/include/config.php ~/backup-mikhmon/config.php
+cp -rf ~/PisowifiSaRoad2Reseller/voucher/. ~/backup-mikhmon/voucher/
+cp -rf ~/PisowifiSaRoad2Reseller/img/. ~/backup-mikhmon/img/
+rm -rf PisowifiSaRoad2Reseller
+rm ~/backup-mikhmon/voucher/print.php
+rm ~/backup-mikhmon/voucher/printbt.php
+git clone https://github.com/JazzNotJuice/PisowifiSaRoad2Reseller.git
+cp ~/backup-mikhmon/config.php ~/PisowifiSaRoad2Reseller/include/config.php
+cp -rf ~/backup-mikhmon/voucher/. ~/PisowifiSaRoad2Reseller/voucher/
+cp -rf ~/backup-mikhmon/img/. ~/PisowifiSaRoad2Reseller/img/
+rm -rf ~/backup-mikhmon
+./start-mikhmon
+EOL
+cat >remove-mikhmon <<EOL
+#bin/bash
+rm -rf PisowifiSaRoad2Reseller
+EOL
+cat >.bashrc <<EOL	
+~/start-mikhmon	
+EOL
+chmod +x start-mikhmon
+chmod +x update-mikhmon
+chmod +x remove-mikhmon
+./start-mikhmon
