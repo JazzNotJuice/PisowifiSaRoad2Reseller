@@ -37,7 +37,8 @@ function sendToQuickPrinterChrome(){
                         + "<cut>"
                 ;
     var textEncoded = encodeURI(commandsToPrint);
-    window.location.href="intent://"+textEncoded+"#Intent;scheme=quickprinter;package=pe.diegoveloper.printerserverapp;end;";
+    //window.location.href="intent://"+textEncoded+"#Intent;scheme=quickprinter;package=pe.diegoveloper.printerserverapp;end;";
+    window.location.href="quickprinter://"+textEncoded;
 }
 </script>
 
