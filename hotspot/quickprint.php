@@ -130,7 +130,7 @@ for ($i = 0; $i < $TotalReg; $i++) {
 
 
 
-<script>
+/*<script>
 $(document).ready(function(){
     $(".quick").click(function(){
         const packageName = $(this).data('package'); // Get the package name from data attribute
@@ -141,5 +141,14 @@ $(document).ready(function(){
 			}, 5000); 
         }
     });
-});
+});*/
+
+$(document).ready(function(){
+    $(".quick").click(function(){
+       
+            loadpage(this.id); 
+			
+        
+    });
+});	
 </script>
