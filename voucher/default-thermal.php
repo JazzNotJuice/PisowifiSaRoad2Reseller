@@ -29,7 +29,7 @@
   <tbody>
 <!-- Logo Hotspotname -->
     <tr>
-      <td style="text-align: center; font-size: 22px; font-weight:bold;"><?= $hotspotname; ?> (Store 1)</td>
+      <td style="text-align: center; font-size: 22px; font-weight:bold;"><?= $hotspotname; ?> (Store 1)sssss</td>
     </tr>
     <tr>
       <td style="text-align: center; font-size: 18px; font-weight:bold;"><?= date("Y-m-d h:i:sa") ?></td>
