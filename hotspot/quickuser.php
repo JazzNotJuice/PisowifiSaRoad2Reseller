@@ -275,7 +275,7 @@ if ($currency == in_array($currency, $cekindo['indo'])) {
 					window.open('./voucher/print.php?user=<?= $usermode ?>-<?= $uname ?>&qr=<?= $qr ?>&session=<?= $session ?>','_blank','width=310,height=450').print();
 					//window.location.href="./?hotspot-user=<?= $u[1] ?>&session=<?= $session ?>";
   			}
-    //sendToQuickPrinterChrome();
+    sendToQuickPrinterChrome();
 });
 </script>
 <?php } ?>
