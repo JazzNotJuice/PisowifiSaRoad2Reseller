@@ -204,6 +204,13 @@ if ($userp != "") {
 } ?>
 
  <script>
+
+function sendToQuickPrinter(){
+    var text = "test printer<br><big>Big title<br><cut>";
+    var textEncoded = encodeURI(text);
+    window.location.href="quickprinter://"+textEncoded;
+}
+	 
 //if you are using latest version of chrome browser I recommend to use:
 function sendToQuickPrinterChrome(){
     var text = "<center>Pisowifi sa Road 2 (Store 1)<br><?= date("Y-m-d h:i:sa") ?><br><center><big><?= $username ?><br><center><?= $validity; ?>  <?= $price; ?><cut>";
@@ -213,7 +220,8 @@ function sendToQuickPrinterChrome(){
 }
 </script>
 
-<center></center><button onclick="sendToQuickPrinterChrome();">Click to PRINT</button></center>
+<center></center><button onclick="sendToQuickPrinter();">SendToQuickPrinter</button></center>
+<center></center><button onclick="sendToQuickPrinterChrome();">sendToQuickPrinterChrome</button></center>
 	
 </body>
 </html>
