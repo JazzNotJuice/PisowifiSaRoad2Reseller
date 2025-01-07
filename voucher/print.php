@@ -203,6 +203,24 @@ if ($userp != "") {
 ?>
 <?php 
 } ?>
+
+ <script>
+function sendToQuickPrinter(){
+    var text = "test printer<br><big>Big title<br><cut>";
+    var textEncoded = encodeURI(text);
+    window.location.href="quickprinter://"+textEncoded;
+}
+
+//if you are using latest version of chrome browser I recommend to use:
+function sendToQuickPrinterChrome(){
+    var text = "test printer<br><big>Big title<br><cut>";
+    var textEncoded = encodeURI(text);
+    window.location.href="intent://"+textEncoded+"#Intent;scheme=quickprinter;package=pe.diegoveloper.printerserverapp;end;";
+    
+}
+</script>
+
+<a onclick="sendToQuickPrinter();">Print Button</a>
 	
 </body>
 </html>
