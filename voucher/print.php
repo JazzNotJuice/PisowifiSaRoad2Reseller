@@ -155,7 +155,7 @@ table.voucher {
 }
 		</style>
 	</head>
-	<body onload="window.print()">
+	<body>
 
 <?php for ($i = 0; $i < $TotalReg; $i++) {;
   $regtable = $getuser[$i];
@@ -204,6 +204,8 @@ if ($userp != "") {
 <?php 
 } ?>
 
-
+<? include('../voucher/printbt.php'); ?>
+<center><button id="printvoucher" onclick="sendToQuickPrinterChrome();">Click to PRINT</button><center>
+		
 </body>
 </html>
