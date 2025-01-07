@@ -130,8 +130,8 @@ for ($i = 0; $i < $TotalReg; $i++) {
 
 
 
-/*<script>
-$(document).ready(function(){
+<script>
+/*$(document).ready(function(){
     $(".quick").click(function(){
         const packageName = $(this).data('package'); // Get the package name from data attribute
         if (confirm(`Are you sure you want to print package: ${packageName}?`)) { 
