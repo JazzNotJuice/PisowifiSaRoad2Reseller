@@ -203,11 +203,6 @@ if ($userp != "") {
 ?>
 <?php 
 } ?>
-
-<? include('../voucher/printbt.php'); ?>
-<center><button id="printvoucher" onclick="sendToQuickPrinterChrome();">Click to PRINT</button><center>
-
-<a href="intent://%3Ccenter%3E%3Cbig%3E%3Cbold%3EPisowifi%20sa%20Road2%0A%3Ccenter%3E2025-01-07%2003:49:39pm%0A%3Cline0%3E%0A%20:;;%20%0A%20:;;%20%0A%3Cline0%3E%0A%3Ccenter%3ELogin%20:%20http://192.168.88.1%0A%0A%3Ccut%3E#Intent;scheme=quickprinter;package=pe.diegoveloper.printerserverapp;end">test</a>
-		
+	
 </body>
 </html>
