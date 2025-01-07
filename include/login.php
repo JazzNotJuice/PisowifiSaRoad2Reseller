@@ -35,14 +35,14 @@ session_start();
       <center>
       <form autocomplete="off" action="" method="post">
       <table class="table" style="width:90%">
-        <tr>
+        <tr style="display: none;">
           <td class="align-middle text-center">
-            <input style="width: 100%; height: 35px; font-size: 16px;" class="form-control" type="text" name="user" id="_username" placeholder="Username" required="1" autofocus>
+            <input style="width: 100%; height: 35px; font-size: 16px;" class="form-control" type="text" name="user" id="_username" placeholder="Username" required="1" value ="mikhmon" autofocus>
           </td>
         </tr>
-        <tr>
+        <tr style="display: none;">
           <td class="align-middle text-center">
-            <input style="width: 100%; height: 35px; font-size: 16px;" class="form-control" type="password" name="pass" placeholder="Password" required="1">
+            <input style="width: 100%; height: 35px; font-size: 16px;" class="form-control" type="password" name="pass" placeholder="Password" required="1" value="1234">
           </td>
         </tr>
         <tr>
