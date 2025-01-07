@@ -131,7 +131,7 @@ for ($i = 0; $i < $TotalReg; $i++) {
 
 
 <script>
-/*$(document).ready(function(){
+$(document).ready(function(){
     $(".quick").click(function(){
         const packageName = $(this).data('package'); // Get the package name from data attribute
         if (confirm(`Are you sure you want to print package: ${packageName}?`)) { 
@@ -141,14 +141,5 @@ for ($i = 0; $i < $TotalReg; $i++) {
 			}, 5000); 
         }
     });
-});*/
-
-$(document).ready(function(){
-    $(".quick").click(function(){
-       
-            loadpage(this.id); 
-			
-        
-    });
-});	
+});
 </script>
