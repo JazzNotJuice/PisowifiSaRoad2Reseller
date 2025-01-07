@@ -204,23 +204,16 @@ if ($userp != "") {
 } ?>
 
  <script>
-
-function sendToQuickPrinter(){
-    var text = "test printer<br><big>Big title<br><cut>";
-    var textEncoded = encodeURI(text);
-    window.location.href="quickprinter://"+textEncoded;
-}
-	 
+ 
 //if you are using latest version of chrome browser I recommend to use:
 function sendToQuickPrinterChrome(){
-    var text = "<center>Pisowifi sa Road 2 (Store 1)<br><br><center><big><?= $username ?><br><center><?= $validity; ?>  <?= $price; ?><cut>";
+    var text = "<center>Pisowifi sa Road 2 (Store 1)<br><?= date("F j, Y h i a") ?><br><center><big><?= $username ?><br><br><center><?= $validity; ?>  <?= $price; ?><cut>";
     var textEncoded = encodeURI(text);
     window.location.href="intent://"+textEncoded+"#Intent;scheme=quickprinter;package=pe.diegoveloper.printerserverapp;end;";
     
 }
 </script>
 
-<center></center><button onclick="sendToQuickPrinter();">SendToQuickPrinter</button></center>
 <center></center><button onclick="sendToQuickPrinterChrome();">sendToQuickPrinterChrome</button></center>
 	
 </body>
