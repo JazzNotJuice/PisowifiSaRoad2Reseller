@@ -213,7 +213,7 @@ function sendToQuickPrinter(){
 	 
 //if you are using latest version of chrome browser I recommend to use:
 function sendToQuickPrinterChrome(){
-    var text = "<center>Pisowifi sa Road 2 (Store 1)<br><?= date("Y-m-d h:i:sa") ?><br><center><big><?= $username ?><br><center><?= $validity; ?>  <?= $price; ?><cut>";
+    var text = "<center>Pisowifi sa Road 2 (Store 1)<br><br><center><big><?= $username ?><br><center><?= $validity; ?>  <?= $price; ?><cut>";
     var textEncoded = encodeURI(text);
     window.location.href="intent://"+textEncoded+"#Intent;scheme=quickprinter;package=pe.diegoveloper.printerserverapp;end;";
     
