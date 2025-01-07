@@ -208,7 +208,7 @@ function sendToQuickPrinterChrome(){
 }
 </script>
 
-<center></center><button style="font-size: 18px;" onclick="sendToQuickPrinterChrome();">CLICK TO PRINT</button></center>
+<center></center><button style="font-size: 63px;" onclick="sendToQuickPrinterChrome();">CLICK TO PRINT</button></center>
 	
 </body>
 </html>
