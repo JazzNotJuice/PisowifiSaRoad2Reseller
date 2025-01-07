@@ -267,14 +267,14 @@ if ($currency == in_array($currency, $cekindo['indo'])) {
 		const img = new Image();
 		img.src = url;
 		
-			//var w = window.innerWidth;
-  			//if (w < 800) {
-			//		sendToQuickPrinterChrome();
-  			//} else if (w > 800) {
+			var w = window.innerWidth;
+  			if (w < 800) {
+					sendToQuickPrinterChrome();
+  			} else if (w > 800) {
 
 					window.open('./voucher/print.php?user=<?= $usermode ?>-<?= $uname ?>&qr=<?= $qr ?>&session=<?= $session ?>','_blank','width=310,height=450').print();
 					//window.location.href="./?hotspot-user=<?= $u[1] ?>&session=<?= $session ?>";
-  			//}
+  			}
     //sendToQuickPrinterChrome();
 });
 </script>
