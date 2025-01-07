@@ -191,8 +191,15 @@ table.voucher {
   ?>
 <?php
 
+if ($userp != "") {
   include('./template-thermal.php');
-
+} else {
+  if ($small == "yes") {
+    include('./template-small.php');
+  } else {
+    include('./template.php');
+  }
+}
 ?>
 <?php 
 } ?>
