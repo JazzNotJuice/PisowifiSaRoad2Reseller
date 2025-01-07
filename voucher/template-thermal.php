@@ -4,41 +4,52 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh; /* Full viewport height */
     margin: 0;
     font-family: 'Arial', sans-serif;
+    text-align: center; /* Ensure text inside table is centered */
+    background-color: #f9f9f9; /* Optional background color */
   }
 
   .voucher {
-    width: 250px; /* Increase width */
+    width: 100%;
+    max-width: 850px; /* Set a max width for the table */
+    border: 2px solid black;
     padding: 10px;
+    box-sizing: border-box;
   }
 
   .voucher td {
-    text-align: center;
     font-size: 18px; /* Increase font size */
+    font-weight: bold;
+    padding: 5px;
   }
 
   .voucher .qrcode {
     height: 180px; /* Increase QR code size */
     width: 180px;
   }
+
+  .voucher td.border {
+    border: 1px solid black;
+  }
 </style>
+
 
 <table class="voucher" style=" width: 100%;">
   <tbody>
 <!-- Logo Hotspotname -->
     <tr>
-      <td style="text-align: center; font-size: 22px; font-weight:bold;"><?= $hotspotname; ?> (Store 1)fffff</td>
+      <td style="text-align: center; font-size: 63px; font-weight:bold;"><?= $hotspotname; ?> (Store 1)</td>
     </tr>
     <tr>
-      <td style="text-align: center; font-size: 18px; font-weight:bold;"><?= date("Y-m-d h:i:sa") ?></td>
+      <td style="text-align: center; font-size: 63px; font-weight:bold;"><?= date("Y-m-d h:i:sa") ?></td>
     </tr>
 	<tr>
-      <td style="text-align: center; font-size: 30px; font-weight:bold; border-bottom: 1px black solid; border-top: 1px black solid;"><br><?= $username; ?><br><br></td>
+      <td style="text-align: center; font-size: 80px; font-weight:bold; border-bottom: 1px black solid; border-top: 1px black solid;"><br><?= $username; ?><br><br></td>
     </tr>
 	<tr>
-      <td style="text-align: center; font-size: 22px; font-weight:bold;"><?= $validity; ?> <?= $price; ?></td>
+      <td style="text-align: center; font-size: 63px; font-weight:bold;"><?= $validity; ?> <?= $price; ?></td>
     </tr>
 <!-- /  -->
     <tr>
