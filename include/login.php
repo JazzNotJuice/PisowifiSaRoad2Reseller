@@ -27,10 +27,10 @@ session_start();
     </div>
     <div class="card-body">
       <div class="text-center pd-5">
-        <img width="50%" height="50%" src="img/road2logo.png" alt="MIKHMON Logo">
+        <img width="70%" height="70%" src="img/road2logo.png" alt="MIKHMON Logo">
       </div>
       <div  class="text-center">
-      <span style="font-size: 25px; margin: 10px;">Pisowifi sa Road 2</span>
+      <span style="font-size: 25px; margin: 10px;">Reseller App</span>
       </div>
       <center>
       <form autocomplete="off" action="" method="post">
