@@ -27,7 +27,7 @@ session_start();
     </div>
     <div class="card-body">
       <div class="text-center pd-5">
-        <img src="img/road2logo.png" alt="MIKHMON Logo">
+        <img width="10%" height="10%" src="img/road2logo.png" alt="MIKHMON Logo">
       </div>
       <div  class="text-center">
       <span style="font-size: 25px; margin: 10px;">Pisowifi sa Road 2</span>
