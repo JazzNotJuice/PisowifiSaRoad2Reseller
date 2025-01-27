@@ -215,7 +215,11 @@ function sendToQuickPrinterChrome(){
 }
 </script>
 
-<center></center><button style="font-size: 80px;" onclick="sendToQuickPrinterChrome();">CLICK TO PRINT</button></center>
-	
+<center></center><button style="font-size: 80px;" onclick="sendToQuickPrinterChrome();">CLICK TO PRINT</button></center> 
+<br>
+<br>
+<br>
+<br>
+<center></center><button style="font-size: 80px;" onclick="window.history.back();">GO BACK</button></center> 
 </body>
 </html>
