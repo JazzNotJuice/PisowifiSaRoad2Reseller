@@ -64,6 +64,8 @@ for ($i = 0; $i < $TotalReg; $i++) {
     $price = $currency . " " . number_format($getprice);
     $sprice = $currency . " " . number_format($getsprice);
 }
+
+if (substr($package, 0, 2) == "S1") {
   ?>
 	     <div class="col-4">
         <div id='./hotspot/quickuser.php?quickprint=<?= $qpname ?>&session=<?= $session; ?>' class="quick pointer box bmh-75 box-bordered <?= $color[rand(1, 11)]; ?>" title='<?= $_print.' '.$_package.' '. $package; ?>' data-package='<?= $package; ?>'>
@@ -79,7 +81,8 @@ for ($i = 0; $i < $TotalReg; $i++) {
             
           </div>
         </div>
-        <?php 
+       <?php 
+	}
       }
     }
     ?>
