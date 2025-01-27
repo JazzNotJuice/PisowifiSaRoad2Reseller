@@ -74,7 +74,7 @@ if (substr($package, 0, 2) == "S1") {
             	<i class="fa fa-print"></i>
             </div>
               <div class="box-group-area">
-                <h3 ><?= $_package ?> : <?= $package; ?> <br></h3>
+                <h3 ><!--<?= $_package ?> : --><?= $package; ?> <br></h3>
                 <!--<span><?= $_time_limit ?>  : <?= $timelimit ?> | <?= $_data_limit ?>  : <?= formatBytes($datalimit, 2) ?> <br> <?= $_validity ?>  : <?= $validity ?> | <?= $_price ?>  : <?= $price ?> | <?= $_selling_price ?>  : <?= $sprice ?></span>-->
               </div>
             </div>
