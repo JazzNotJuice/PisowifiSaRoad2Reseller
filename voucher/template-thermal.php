@@ -40,7 +40,7 @@
   <tbody>
 <!-- Logo Hotspotname -->
     <tr>
-      <td style="text-align: center; font-size: 63px; font-weight:bold;"><?= $hotspotname; ?> (Store 1)</td>
+      <td style="text-align: center; font-size: 63px; font-weight:bold;">Pisowifi sa Abbey Road (Store 1)</td>
     </tr>
     <tr>
       <td style="text-align: center; font-size: 63px; font-weight:bold;"><?= date("Y-m-d h:i:sa") ?></td>
